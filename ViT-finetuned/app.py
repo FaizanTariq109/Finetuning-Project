@@ -1,6 +1,5 @@
 import streamlit as st
 
-# ⚙️ Page configuration (must be first Streamlit command)
 st.set_page_config(page_title="🍽️ Food41 Image Classifier", layout="centered")
 
 from transformers import ViTForImageClassification, ViTImageProcessor
@@ -10,7 +9,7 @@ import torch
 # -----------------------------
 # ✅ Load model and processor
 # -----------------------------
-MODEL_DIR = "."  # same folder as app.py
+MODEL_DIR = "./ViT-finetuned"  # same folder as app.py
 
 @st.cache_resource
 def load_model():
