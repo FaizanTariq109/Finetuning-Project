@@ -1,0 +1,20 @@
+{
+  "repo_id": "FaizanTariq109/ViTFinetuned",
+  "revision": "ae9a5fe0a1787ba88cb00a0e51e0d2989dc562fc",
+  "files": {
+    "config.json": {
+      "size": 5657,
+      "sha256": "bef2a6e546b86b8a610a814eb1c02926027e88db3ddd28d9750e0e2a543d1083",
+      "canonical_sha256": "c5b684bf2af90568a7d4f99c1de296e46c39658fd7901c112e5a02c6a237bc0d"
+    },
+    "preprocessor_config.json": {
+      "size": 374,
+      "sha256": "937a9376b0fbe362278da22f3b6e5008697fa7c00740c8c0377ca3ae8b4307ef",
+      "canonical_sha256": "57d2ce8064f38fb30b8bd839a700cc679ef4e354d28cc8c2707350c261494a2c"
+    },
+    "model.safetensors": {
+      "size": 343528508,
+      "sha256": "f705b57ae486d42cd55a7314b821c400c5f6c0f54b4b39b20dd6c787160335c1"
+    }
+  }
+}

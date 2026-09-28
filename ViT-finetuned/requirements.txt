@@ -1,6 +1,8 @@
-streamlit
-torch
-torchvision
-transformers
-Pillow
-numpy
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0+cpu
+transformers==4.53.3
+streamlit==1.39.0
+Pillow==10.4.0
+numpy==1.26.4
+safetensors==0.8.0
+huggingface-hub==0.36.2

@@ -1,18 +1,19 @@
 # Transformer fine-tuning demos
 
-University transformer applications by Faizan Tariq. This repository contains T5 summarization and ViT food-image inference source. Portfolio preparation is proceeding one app at a time; no public deployment is claimed yet.
+University transformer applications by Faizan Tariq. This umbrella repository covers T5 news summarization, ViT food-image classification and GPT-2 recipe generation. T5 is publicly deployed; ViT is locally validated and prepared for deployment; GPT-2 preparation remains pending.
 
 ## T5 News Summarizer
 
 The recovered T5-small checkpoint loads with its original configuration and tokenizer and produces summaries in local smoke tests. The application now has relative-path handling, artifact checksums, cached CPU inference, bounded input/output and explicit truncation feedback.
 
+- [Live Demo](https://faizan-t5-summarizer.streamlit.app/)
 - [Project README](t5-small-finetuned/ReadMe.md)
 - [Local validation](t5-small-finetuned/VALIDATION.md)
 - [Deployment guide](t5-small-finetuned/DEPLOYMENT.md)
 - Entrypoint: `t5-small-finetuned/app.py`
 - Dependencies: `t5-small-finetuned/requirements.txt`
 
-The 242 MB recovered weight file stays outside normal Git history. The model and its card are published on Hugging Face; anonymous download, hashes and inference passed. GitHub approval and Streamlit Community Cloud deployment/testing remain pending. No benchmark score is presented as reproduced; the original training report is retained as historical evidence.
+The 242 MB recovered weight file stays outside normal Git history. The model and its card are published on Hugging Face; anonymous download, hashes and inference passed. The T5 application is published on GitHub and successfully deployed and tested on Streamlit Community Cloud. No benchmark score is presented as reproduced; the original training report is retained as historical evidence.
 
 ```bash
 python -m venv .venv-t5
@@ -21,11 +22,21 @@ python -m pip install -r t5-small-finetuned/requirements.txt
 python -m streamlit run t5-small-finetuned/app.py
 ```
 
-## ViT classifier — deferred
+## ViT food classifier - locally validated, deployment pending
 
-`ViT-finetuned/app.py` and its original configuration/processor remain available. Its recovered weights have not been restored into this checkout. The saved configuration has 101 labels despite the historical Food41 UI name; model/dataset naming and inference require a separate review. Existing working-copy repairs are preserved. Do not present it as validated or deployed yet.
+The recovered checkpoint has **101 Food-101 labels**; `food41` is the original Kaggle dataset slug, not the class count. Local model loading and four food-image inference smoke tests passed. These are not benchmark results.
 
-Use the app-specific requirements for the prepared T5 application.
+- [ViT documentation](ViT-finetuned/README.md)
+- Entrypoint: `ViT-finetuned/app.py`
+- Dependencies: `ViT-finetuned/requirements.txt`
+- Weights: existing public `FaizanTariq109/ViTFinetuned` Hugging Face checkpoint, pinned and checksum-verified; no large weight in Git.
+- Prepared and locally validated; not yet publicly deployed. Streamlit Community Cloud deployment and public verification remain pending.
+
+Use each application's own requirements file.
+
+## GPT-2 recipe generator - preparation pending
+
+GPT-2 will be reviewed and prepared in a later task. No validation or deployment status is claimed here.
 
 ## Provenance and configuration
 
