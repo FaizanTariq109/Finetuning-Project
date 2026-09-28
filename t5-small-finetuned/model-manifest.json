@@ -1,0 +1,12 @@
+{
+  "description": "Recovered T5-small inference artifacts. SHA-256 from verified working copy, 2026-09-28.",
+  "sha256": {
+    "config.json": "c8b2f0a15f26421548d8292dd0c2a01fb96ca68c9274b7af847acff2f94e99b5",
+    "generation_config.json": "5a98729bc0d2452e2cb4831a793a1be6259ba33f06287ce85eca878b40c9c95f",
+    "model.safetensors": "881ecd3d2e20cfb1ddf96ac598ad90a610007dfa4ff04cfc024e4afd118bc686",
+    "special_tokens_map.json": "65d84a9271d68f1230ab99518c00f0f7eaef95c7b363001595ba6fa662d434b1",
+    "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+    "tokenizer.json": "bc41b89d51f17e135ad340df3ae17759cff364f4ec0ab7570dffcecd98abfc60",
+    "tokenizer_config.json": "536712172825145ed949ec41033d3b91683eca709bf575b3d03d7763ba47f2f9"
+  }
+}

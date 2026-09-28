@@ -1,0 +1,26 @@
+
+# Local configuration and generated dependencies
+.env
+.env.*
+!.env.example
+!.env.*.example
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+.audit/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+
+# Recovered model artifacts and per-project environments
+.venv*/
+*.safetensors
+*.pt
+*.pth
+pytorch_model*.bin
+.cache/
+.streamlit/secrets.toml
